@@ -1,0 +1,16 @@
+START
+    INITIALIZE begOfYearPrice = 200
+    INITIALIZE endOfYearPrice
+    INITIALIZE percentIncrease
+
+    INPUT endofYearPrice
+    percentIncrease = 100 * (endOfYearPrice - begOfYearPrice) / begOfYearPrice
+    DISPLAY "Percentage increase for the year is " + percentIncrease
+STOP
+
+Explanation
+1. "Percentage increase for the year is " This is called a string which can consists of 
+alphanumeric characters
+2.+   concatenation operator
+
+ 

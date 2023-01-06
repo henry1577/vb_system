@@ -1,0 +1,12 @@
+START 
+  INITIALIZE price = 19.95
+  INITIALIZE discountPercent = 30
+  INITIALIZE markDown
+
+  markDown = ( variable discountPercent/100 ) *  price
+  price = price -  markDown
+
+PRINT  = price
+
+STOP
+

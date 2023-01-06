@@ -1,0 +1,89 @@
+START
+   INITIALIZE bill amount
+   INITIALIZE tipPercentage = 0.15
+   INITIALIZE tipAmount
+
+   INPUT billamount
+   IF (bill amount >=50 ) THEN
+	tipAmount = billamount * tipPercentage 
+   END IF
+   DISPLAY tipAmount
+    IF (bill amount >=50 ) THEN
+	tipAmount = billamount * tipPercentage 
+   END IF
+END
+
+input: 35
+inout: 60
+tipAmount = 60*0.15
+	 = 9
+
+START
+   INITIALIZE bill amount
+   INITIALIZE tipAmount
+
+   INPUT billamount
+   IF (bill amount >=50 ) THEN
+	tipAmount = billamount * 0.15
+   END IF
+   DISPLAY tipAmount
+    IF (bill amount >=50 ) THEN
+	tipAmount = billamount *  0.1
+   END IF
+END
+
+
+
+START
+   INITIALIZE WORKINGHOUR 
+   INITIALIZE TOTALWAGES
+   INITIALIZE PerHour = 8
+   INITIALIZE OTPerHour = 5.50
+  
+   INPUT WORKINGHOUR
+   IF (WORKINGHOUR < 8) THEN
+              TOTALWAGES = WORKINGHOUR * PerHour
+   END IF
+   DISPLAY TOTALWAGES
+   
+    INPUT WORKINGHOUR
+   IF (WORKINGHOUR > 8) THEN
+              TOTALWAGES =  [(WORKINGHOUR - 8 ) * OTPerHour] + (WORKINHOUR * PerHour
+               		
+   END IF
+   DISPLAY TOTALWAGES
+
+END
+
+START 
+  INITIALIZE TOTALCOPIES
+  INITIALIZE TOTALCOSTS
+  
+   INPUT total CISTS
+   IF (TOTALCOPIES < = 100) THEN
+        TOTALCOSTS = TOTALCOPIES * 0.05
+   ELSE
+         TOTALCOSTS = 5 + ((TOTALCOPIES - 100) * 0.03)
+   END IF
+    
+         DISPLAY TOTALCOSTS
+END
+
+
+START 
+  INITIALIZE MASS
+  INITIALIZE WEIGHT
+
+
+  INPUT MASS
+   WEIGHT = MASS * 9.8
+  IF (WEIGHT > 1000) THEN
+ DISPLAY "That it is too heavy"
+ END IF
+
+ IF (WEIGHT < 10) THEN
+ DISPLAY "That it is too light"
+ END IF
+END
+
+ 

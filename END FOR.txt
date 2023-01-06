@@ -1,0 +1,45 @@
+START
+INITIALIZE num
+INITIALIZE total
+
+FOR num = 10 TO 150
+  total=total + num
+  ENDFOR
+  DISPLAY total
+END
+
+S1
+START
+  INITIALIZE num
+  INITIALIZE total
+   
+   FOR num = 1 TO 99 STEP 2
+      total = total + num
+     ENDFOR
+   DISPLAY total
+  END
+
+S2
+START
+  INITIALIZE num
+  INITIALIZE total
+  
+  FOR num = 1 TO 99
+      IF num MODULUS 2= 1 THEN
+      total = total + num
+      END IF 
+      ENDFOR	
+      DISPLY total
+END
+
+START
+    INITIALIZE accNum = 1000
+    INITIALIZE year 
+  FOR year = 1 TO 5
+
+ accNUM = ( accNUM * 3.75) + accNUM
+ year +=1
+display accNum
+
+endfor
+END

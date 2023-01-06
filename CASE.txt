@@ -1,0 +1,103 @@
+START 
+  INITIALIZE Total Purchase
+  INITIALIZE Total Amount
+   INPUT Total Purchase
+
+   CASE Total Purchase
+(CASE 0 TO 49) THEN
+	TOTAL Amount = CASE * 0
+ELSE 
+
+ (CASE 50 TO 100) THEN
+	TOTAL AMOUNT = (CASE * 0.05) - Total Purchase
+
+ELSE
+
+(CASE101 TO 150) THEN
+	TOTAL AMOUNT = (CASE* 0.10) - Total Purchase
+
+ELSE
+
+(CASE 151 TO 200) THEN
+	TOTAL AMOUNT = (CASE*0.15) - Total Purchase
+
+ELSE
+
+(CASE>200) THEN
+	TOTAL AMOUNT = (CASE*0.2) - Total Purchase
+ 
+END CASE
+DISPLAY TOTAL AMOUNT
+END
+
+
+
+START 
+  INITIALIZE Total Purchase
+  INITIALIZE Total Amount
+  INITIALIZE DISCOUNT
+   INPUT Total Purchase
+
+   CASE Total Purchase
+(CASE 0 TO 49) THEN
+	DISCOUNT=0
+
+ (CASE 50 TO 100) THEN
+	DISCOUNT = 0.05
+
+(CASE101 TO 150) THEN
+	DISCOUNT = 0.1
+
+(CASE 151 TO 200) THEN
+	DISCOUNT = 0.15
+
+(CASE>200) THEN
+	DISCOUNT = 0.2
+ 
+END CASE
+
+TOTAL AMOUNT = (CASE * DISCOUNT) - Total Purchase
+DISPLAY TOTAL AMOUNT
+END
+
+
+
+
+
+
+START 
+  INITIALIZE Units sales
+  INITIALIZE Sales BONUS
+  INITIALIZE TOTAL
+  INITIALIZE TOTAL sales price
+  INITIALIZE TOTAL sales BONUS
+  INITIALIZE TOTAL Commision
+ 
+INPUT Units sales
+  CASE Units sales
+  
+  (CASE 1 TO 100) THEN 
+	Sales BONUS = 0.25
+
+(CASE 101 TO 300) THEN
+	Sales BONUS = 0.5
+
+(CASE 301 TO 600) THEN
+	Sales Bonus = 1
+
+(CASE > 601) THEN
+	Sales BONUS = 1.5
+
+END CASE
+
+TOTAL sales price = (650,000 * CASE)
+TOTAL Commision = TOTAL sales price * 0.12
+TOTAL sales BONUS = TOTAL sales price * Sales BONUS
+TOTAL = TOTAL Commision + TOTAL sales BONUS
+
+DISPLAY TOTAL sales price
+DISPLAY TOTAL Commision
+DISPLAY sales BONUS
+DISPLAY TOTAL
+
+END
